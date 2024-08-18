@@ -1,0 +1,36 @@
+print the given pattern...
+* * * * *
+* * * *
+* * *
+* *
+*
+
+package Lec2;
+
+import java.util.Scanner;
+
+public class pattern3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num = sc.nextInt();
+		int i=1;
+		while(i<=num) {
+//			star..
+			int j=1;
+			
+				while(j<=num) {
+					System.out.print("* ");
+					j++;
+				}
+//				next row preparation..
+				System.out.println();
+				i++;
+			}
+
+	}
+
+}
