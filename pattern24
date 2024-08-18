@@ -1,0 +1,39 @@
+package Lec2;
+
+import java.util.Scanner;
+
+public class pattern24 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num = sc.nextInt();
+		int star =1;
+		int a=1;
+		int row =1;
+		int space =num-1;
+		while(row<=num) {
+			// space
+			int i=1;
+			while(i<=space) {
+				System.out.print("  ");
+				i++;
+			}
+			// star 
+			int j=1;
+			while(j<=star) {
+				System.out.print(a+" ");
+				j++;
+			}
+			// next row ki prep
+			a++;
+			row++;
+			System.out.println();
+			space--;
+			star=star+2;
+
+	}
+	}
+
+}
